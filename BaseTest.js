@@ -20,7 +20,7 @@ class BaseTest {
         console.log("BROWSER:"+this.browser);
 
         // run server and setup driver
-        await this.runServer( "./run", [] );
+        await this.runServer( "../run", [] );
         await this.setupDriver();
         // deixem temps a que el servidor es posi en marxa
         await this.driver.sleep(2000);
